@@ -1,0 +1,27 @@
+const RECAP_FETES_DATA = {
+  // Données réelles — format : { agent: periode } où periode = 'M' ou 'AM'
+  2020: {
+    '01/01': {'ADJ LEFEBVRE':'M','BC DELEAU':'AM'},
+    '25/12': {'ADJ CARLIER':'AM','BC BOUXOM':'M'},
+  },
+  2021: {
+    '01/01': {'BC DELCROIX':'M','BC CATOIRE':'M','BC DRUEZ':'AM'}, 
+   '25/12': {'MAJ LELEU':'AM','BC ANTHONY':'M'},
+  },
+  2022: {
+    '01/01': {'ADJ LEFEBVRE':'M','BC DEPREY':'AM'},
+    '25/12': {'BC BOUXOM':'M','BC ARNAULT':'AM'},
+  },
+  2023: {
+    '01/01': {'BC DELEAU':'M','ADJ CORRARD':'AM'},
+    '25/12': {'BC HOCHARD':'M','MAJ LELEU':'AM'},
+  },
+  2024: {
+    '01/01': {'BC BASTIEN':'M','BC DRUEZ':'AM'},
+    '25/12': {'BC ARNAULT':'AM','BC BOUXOM':'M'},
+  },
+  2025: {
+    '01/01': {'ADJ LEFEBVRE':'M','BC DELCROIX':'AM'},
+    '25/12': {'BC HOCHARD':'AM','ADJ CORRARD':'M'},
+  },
+};
