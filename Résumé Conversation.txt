@@ -1,0 +1,80 @@
+"Fais-moi un résumé compact de tout ce qu'on a fait dans cette conversation, que je puisse coller dans une nouvelle conversation pour reprendre le contexte."
+
+═══════════════════════════════════════════════════════
+RÉSUMÉ COMPACT — planning_v1_47.php — C.C.P.D. Tournai
+═══════════════════════════════════════════════════════
+
+## FICHIER
+- planning_v1_47.php (~7298 lignes, PHP + JS + CSS monolithique)
+- BDD : MySQL (config.php ou valeurs par défaut)
+- Environnements : production / development (APP_ENV)
+
+## TABLES BDD
+- app_meta          → suivi des migrations (runMigrationOnce)
+- user_rights       → droits par user (can_conge, can_perm)
+- tir_notes         → notes TIR par agent/année
+- locks / locks_mois → verrous global / agent / mois
+- vacation_overrides → surcharges de vacation par agent/date
+- agent_quotas      → quotas congés par agent/année/type
+- agents_history    → historique groupes des agents
+- permanences, conges, tir, tir_annulations (tables métier)
+
+## AGENTS & GROUPES
+- direction_police  : CoGe ROUSSEL
+- direction_mokadem : Cne MOKADEM
+- lcl_parent        : LCL PARENT
+- nuit              : BC MASSON, BC SIGAUD, BC DAINOTTI
+- equipe            : BC BOUXOM, BC ARNAULT, BC HOCHARD,
+                      BC ANTHONY, BC BASTIEN, BC DUPUIS
+- gie               : ADJ LEFEBVRE, ADJ CORRARD
+- douane / douane_j : IR MOREAU, ACP1 LOIN, ACP1 DEMERVAL
+- standard_police   : GP DHALLEWYN, BC DELCROIX, BC DRUEZ
+- standard_j        : AA MAES
+- adc_lambert       : ADC LAMBERT
+
+## VUES
+- ?vue=mois  → planning mensuel
+- ?vue=annee → planning annuel
+
+## FENÊTRES / MODALS
+- overlay          → modal cellule (congé / vacation)
+- overlay-perm     → Permanences
+- overlay-tir      → TIR (tirs annuels + quadrimestriel)
+- overlay-recap-fetes → Récap permanences fêtes (2020–2026)
+- overlay-quota-recap → Récap individuel quotas
+- overlay-admin    → Panneau admin (users, locks, agents)
+- overlay-change-pass → Changement mot de passe
+
+## ACTIONS AJAX PRINCIPALES
+Congés    : save_conge, delete_conge
+Perms     : save_perm, delete_perm
+TIR       : save_tir, delete_tir, save_tir_annul, delete_tir_annul,
+            save_tir_note, compteur_tir
+Quotas    : get_quotas, set_quota, get_conges_count
+Verrous   : lock_global, unlock_global, lock_agent, unlock_agent,
+            lock_agent_mois, unlock_agent_mois
+Users     : list_users, save_user, delete_user, reset_password,
+            change_password, create_agent_users
+Agents    : replace_agent_preview, replace_agent_exec,
+            list_agents_history, save_agent_history,
+            delete_agent_history, get_agents_history
+Fêtes     : get_fetes_perms
+Notes     : get_notes, save_note_msg, delete_note_msg,
+            save_note_evt, delete_note_evt
+Divers    : get_last_change, get_cell, reset_data, compteur_perm
+
+## MODIFICATIONS EFFECTUÉES (session courante sur v1_43)
+1. Fenêtre TIRS — ligne TOTAL :
+   colspan="2" sur la cellule TOTAL en mode admin
+   (fusion TOTAL + cellule grise)
+2. Fenêtre TIRS — ligne TOTAL global :
+   colspan="2" sur la cellule TOTAL global en mode admin
+   (fusion TOTAL global + cellule grise)
+3. Fenêtre Récap Fêtes — en-têtes années (2020–2026) :
+   font-size:1rem + font-weight:800
+   (agrandissement des années comme titres de colonnes)
+
+⚠️  Les modifs ci-dessus ont été faites sur v1_43.
+    Vérifier si elles sont déjà intégrées dans v1_47
+    avant toute nouvelle modification.
+═══════════════════════════════════════════════════════
