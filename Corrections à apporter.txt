@@ -1,1 +1,14 @@
-J'ai aussi modifier des informations dans les lignes 5578 et 5892 (Vérifier si je n'ai pas fait d’erreur).
+Implémeter le plan de rappel (bouton à la fenetre de connexion ?) ou dans le planning après login ?
+Au niveau de la fenêtre des congés du LCL PARENT, il faut l'agrandir (Modifier la vacation affichée, les options sont tronquées) et ajouter dans "Période" le bouton "NUIT".
+Trouver une autre couleur pour différencier "P" de "J" ca rle vert est trop similaire.
+Agrandir la fenetre des congés pour tous les effectifs.
+Pour l'équipe "Gie", ajuster "P" et "R" aux boutons "M"-"AM"-"J".
+La couleur de fond du "R" pour l'ADC LAMBERT n'est pas celle du groupe "Gie". Garder la couleur grise.
+Onglet "Congés" dans le menu "Admin", bordurer les effectifs des blocs "Direction, etc..." en gras pour le contour et bordures moyennes pour l'intérieur.
+Onglet "Remplacement" du menu "Admin", trouver une solution à  ce message pour automatiser : "⚠ Après la validation, vous devrez mettre à jour manuellement le fichier PHP (tableau $groupeAgent et listes d'agents) pour que le nouveau nom apparaisse correctement dans le planning. "
+Onglet "Historique Agents", ajouter un bouton "Afficher anciens agents (inactifs)" comme cela a été fait pour le récapitulatifs permanences des fetes.
+Définir un "tuto" d'explication sur les groupes ; à quoi correspond "inconnu" ?
+Dans le détail du bouton "permanences", inutile de spécifier les "IM - IAM et IJ", ne doivent être affichées que les permanences "M et AM". Réfléchir à faire une autre présentation car la liste est longue (pourquoi pas un tableau ?).
+Supprimer le bouton "Afficher anciens agents" de la fenetre "Permanences effectuées — 2026".
+En 2027, quid d'archivage des années antérieures ? Et de l'année en cours ? Module de recherches ?
+Pb de refraichissement, un effectif de "nuit" pose des congés ("PREV), les jours FERIES apparaissent (alors qu'ils ne devraient pas !). Idem quand il supprime un "PREV". On fait un refresh et ils disparaissent. A corriger !
