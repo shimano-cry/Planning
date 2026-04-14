@@ -14,4 +14,4 @@ En 2027, quid d'archivage des années antérieures ? Et de l'année en cours ? M
 Pb de refraichissement, un effectif de "nuit" pose des congés ("PREV), les jours FERIES apparaissent (alors qu'ils ne devraient pas !). Idem quand il supprime un "PREV". On fait un refresh et ils disparaissent. A corriger !
 Si un user selectionne un "DA" ou "PR", il faudrait que l'admin puisse valider ce "DA ou PR" car actuellement, le user peut supprimer ce "congé" ! Il faut trouver la solution pour que ce ne soit pas possible !
 Idem, l'affichage de la période pour les "user" ne sont pas d'une utilité "visuelle" pour eux car ils ne peuvent poser que du "PREV" !
-
+Revoir la largeur des cellules car si on pose un "CAA AM + CA AM", ca dépasse "TIR AM + HS AM", à vérifier et corriger !
