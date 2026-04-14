@@ -1,20 +1,3 @@
-Implémeter le plan de rappel (bouton à la fenetre de connexion ?) ou dans le planning après login ?
-Au niveau de la fenêtre des congés du LCL PARENT, il faut l'agrandir (Modifier la vacation affichée, les options sont tronquées) et ajouter dans "Période" le bouton "NUIT".
-Trouver une autre couleur pour différencier "P" de "J" ca rend le vert trop similaire.
-Agrandir la fenetre des congés pour tous les effectifs.
-Pour l'équipe "Gie", ajuster "P" et "R" aux boutons "M"-"AM"-"J".
-La couleur de fond du "R" pour l'ADC LAMBERT n'est pas celle du groupe "Gie". Garder la couleur grise.
-Onglet "Congés" dans le menu "Admin", bordurer les effectifs des blocs "Direction, etc..." en gras pour le contour et bordures moyennes pour l'intérieur.
-Onglet "Remplacement" du menu "Admin", trouver une solution à ce message pour automatiser : "⚠ Après la validation, vous devrez mettre à jour manuellement le fichier PHP (tableau $groupeAgent et listes d'agents) pour que le nouveau nom apparaisse correctement dans le planning. "
-Onglet "Historique Agents", ajouter un bouton "Afficher anciens agents (inactifs)" comme cela a été fait pour le récapitulatifs permanences des fetes.
 Définir un "tuto" d'explication sur les groupes ; à quoi correspond "inconnu" ?
-Dans le détail du bouton "permanences", inutile de spécifier les "IM - IAM et IJ", ne doivent être affichées que les permanences "M et AM". Réfléchir à faire une autre présentation car la liste est longue (pourquoi pas un tableau ?).
-Supprimer le bouton "Afficher anciens agents" de la fenetre "Permanences effectuées — 2026".
 En 2027, quid d'archivage des années antérieures ? Et de l'année en cours ? Module de recherches ?
-Pb de refraichissement, un effectif de "nuit" pose des congés ("PREV), les jours FERIES apparaissent (alors qu'ils ne devraient pas !). Idem quand il supprime un "PREV". On fait un refresh et ils disparaissent. A corriger !
-Si un user selectionne un "DA" ou "PR", il faudrait que l'admin puisse valider ce "DA ou PR" car actuellement, le user peut supprimer ce "congé" ! Il faut trouver la solution pour que ce ne soit pas possible !
-Idem, l'affichage de la période pour les "user" ne sont pas d'une utilité "visuelle" pour eux car ils ne peuvent poser que du "PREV" !
-Revoir la largeur des cellules car si on pose un "CAA AM + CA AM", ca dépasse "TIR AM + HS AM", à vérifier et corriger ! D'ailleurs, ca n'affiche que le CAA ou la CA, mais pas les 2. Il faudrait prendr een compte la possibilité d'afficher "CA M + HS AM" ou "CET M + RTT AM", bref un mix des congés en "M" et "AM" cumulé.
-Prévoir aussi une légende pour les restitutions horaires de permanences :
-Sa M : 10h02 - Di M : 14h02 - Ferié M : 14h02
-Sa AM : 10h42 - Di AM : 14h02 - Férié AM : 14h02
+Revoir la largeur des cellules car si on pose un "CAA AM + CA AM", ca dépasse "TIR AM + HS AM", à vérifier et corriger ! D'ailleurs, ca n'affiche que le CAA ou la CA, mais pas les 2. Il faudrait prendre en compte la possibilité d'afficher "CA M + HS AM" ou "CET M + RTT AM", bref un mix des congés en "M" et "AM" cumulé.
