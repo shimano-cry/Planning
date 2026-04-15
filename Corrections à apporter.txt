@@ -1,3 +1,2 @@
-Définir un "tuto" d'explication sur les groupes ; à quoi correspond "inconnu" ?
-En 2027, quid d'archivage des années antérieures ? Et de l'année en cours ? Module de recherches ?
-Revoir la largeur des cellules car si on pose un "CAA AM + CA AM", ca dépasse "TIR AM + HS AM", à vérifier et corriger ! D'ailleurs, ca n'affiche que le CAA ou la CA, mais pas les 2. Il faudrait prendre en compte la possibilité d'afficher "CA M + HS AM" ou "CET M + RTT AM", bref un mix des congés en "M" et "AM" cumulé.
+Il faudrait prendre en compte la possibilité d'afficher "CA M + HS AM" ou "CET M + RTT AM", bref un mix des congés en "M" et "AM" cumulé.
+D'ailleurs, ca n'affiche que le CAA ou la CA, mais pas les 2.
